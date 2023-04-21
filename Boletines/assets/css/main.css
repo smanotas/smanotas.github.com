@@ -1,6 +1,9 @@
 html{
     font-family: 'Nunito Sans', sans-serif;
 }
+img{
+    max-width: 100%;
+}
 a{
     text-decoration: none;
 }
@@ -69,12 +72,12 @@ p{
 }
 .content{
     max-width: 960px;
-    max-height: 500px;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     background-color: #fff;
     position: relative;
     overflow: scroll;
+    padding: 1.8em;
 }
 .actions{
     position: absolute;
@@ -100,4 +103,26 @@ p{
 }
 td{
     border:solid 1px;
+}
+@media (min-heigth:550px){
+    .content{
+        height: 500px;
+    }
+}
+@media (max-width=600px) {
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #c471ed;
+    }
+    th{
+        display: none;
+    }
 }
