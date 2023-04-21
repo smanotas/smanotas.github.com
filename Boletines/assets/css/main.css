@@ -4,8 +4,12 @@ html{
 a{
     text-decoration: none;
 }
+a:hover{
+    opacity: 0.8;
+}
 .tittle{
     text-transform: uppercase;
+    text-align: center;
 }
 .tittle-item{
     border-bottom: #12c2e9 solid 2px;
@@ -17,6 +21,18 @@ a{
     color: #fff;
     padding: 10px;
     border-radius: 2em;
+    margin-right: 0.5em;
+    font-size: 2em;
+}
+.address{
+    font-weight: bold;
+    color: #c471ed;
+    font-size: 1.2em;
+}
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 300px;
 }
 .paragraph{
     line-height: 1.8em;
